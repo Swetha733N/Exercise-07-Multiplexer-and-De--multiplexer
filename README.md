@@ -64,25 +64,39 @@ RegisterNumber:
 
 
 ### RTL LOGIC  
-
-
-
-
-
-
+![multiplexer and demultiplexer_page-0001](https://user-images.githubusercontent.com/122199934/214311310-fda228bd-e958-442a-abda-196f2630ca10.jpg)
+![multiplexer and demultiplexer_page-0003](https://user-images.githubusercontent.com/122199934/214311461-ae4efa76-f373-4032-95f7-cc728bdb3406.jpg)
 
 
 ### TIMING DIGRAMS  
-
-
-
+![multiplexer and demultiplexer_page-0002](https://user-images.githubusercontent.com/122199934/214311615-98908e81-2119-4fa8-af89-3fd0d6ab81fe.jpg)
+![multiplexer and demultiplexer_page-0004](https://user-images.githubusercontent.com/122199934/214311714-cfddbefc-bb3d-46f1-be3f-0b318ef3c291.jpg)
 
 
 ### TRUTH TABLE 
+module multiplexer(10, 11, 12, 13, 50, s1,y);
+output y;
+not (sec,se);
+nor (s1c,s1);
+input 10,11,12,13, se,si; wire p,q,r,s, sec, sic; and (p, soc, s1c, 10); and (q, sec, s1,11);
+and (r,s0, sic,i2);
+and (s, so, s1,13);
+or (y,p,q,r,s);
+endmodule
 
+### 1 X 4 De-Multiplexer
 
-
-
+module demultiplexer(ye, yi,y2, y3, se, si, i);
+input so, s1,1;
+output yo,y1,y2,y3;
+wire sec,sic;
+nor (sec, se);
+nor (sic, s1);
+and (ye,i,sec, s1,);
+and (y1,i, sec, sic);
+and (y2,i,se, sic);
+and (y3,i,se,s1);
+endmodule
 
 
 ### RESULTS 
